@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'ap-photo',
@@ -6,6 +6,6 @@ import { Component } from "@angular/core";
 })
 
 export class PhotoComponent{
-    dsc = 'Oceano';
-    url = 'https://s2.glbimg.com/sjbIwYbTyJMCcO4JTs_yOSn-SBU=/620x480/e.glbimg.com/og/ed/f/original/2018/11/06/wave-3473335_1920.jpg';
+    @Input() dsc = ''; //recebe valor pelo html (componente)
+    @Input() url = '';
 }
